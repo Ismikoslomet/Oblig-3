@@ -59,7 +59,7 @@ function hentAlle() {
     });
 }
 function formatBilletter(billetten) {
-    let output = "<table><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
+    let output = "<table class='table table-striped'><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
         "<th>Etternavn</th><th>Telefonnummer</th><th>Epost</th></tr>";
     for (const billetter of billetten) {
         output += "<tr><td>" + billetter.film + "</td><td>" + billetter.antall + "</td><td>" + billetter.fornavn + "</td>" +
