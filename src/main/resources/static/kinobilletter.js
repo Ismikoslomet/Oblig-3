@@ -46,10 +46,6 @@ function formSubmit() {
         }
         return true;
     }
-
-
-
-
     console.log(billetter)
     $.post("/lagre",billetter, function() {
         hentAlle()
@@ -57,13 +53,11 @@ function formSubmit() {
 
     });
 }
-
 function hentAlle() {
     $.get("/hentAlle", function (billettene) {
         formatBilletter(billettene);
     });
 }
-
 function formatBilletter(billetten) {
     let output = "<table><tr><th>Film</th><th>Antall</th><th>Fornavn</th>" +
         "<th>Etternavn</th><th>Telefonnummer</th><th>Epost</th></tr>";
