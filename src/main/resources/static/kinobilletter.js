@@ -68,7 +68,10 @@ function formatBilletter(billetten) {
 }
 
 function slettAlle() {
+    const ok = confirm("Sikker på at du vil slette alle?");
+    if(ok){
     $.get("/slettAlle", function () {
         hentAlle();
     });
+}
 }
