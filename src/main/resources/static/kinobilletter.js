@@ -37,6 +37,16 @@ function formSubmit() {
         alert("Vennligst skriv en gyldig etternavn, kun bokstaver");
         return;
     }
+    const antallRegex = /^[1-9][0-9]{0,2}$/; // Mønster for tall fra 1 til 999
+
+    function validerAntall(antall) {
+        if (!antallRegex.test(antall)) {
+            alert("Vennligst skriv et gyldig antall mellom 1 og 999.");
+            return false;
+        }
+        return true;
+    }
+
 
 
 
