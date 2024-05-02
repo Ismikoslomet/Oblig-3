@@ -1,6 +1,3 @@
-
-
-
 function formSubmit() {
     console.log("Vi er inne i formSubmit")
     const billetter = {
